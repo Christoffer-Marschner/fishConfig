@@ -2,16 +2,16 @@
 function return_color
   #write chosen color to stdout
   switch $argv
-    case "ok"
-      echo "\e[38;5;118m"
-    case "error"
-      echo "\e[48;5;203;38;5;232m"
-    case "warning"
-      echo "\e[38;5;226;4m"
-    case "message"
-      echo "\e[38;5;45m"
-    case "*"
-      echo "\e[0m"
+    case ok
+      echo '\e[38;5;82m'
+    case error
+      echo '\e[48;5;203;38;5;232m'
+    case warning
+      echo '\e[38;5;226;4m'
+    case message
+      echo '\e[38;5;45m'
+    case *
+      echo '\e[0m'
   end
 end
 

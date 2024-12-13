@@ -1,6 +1,6 @@
 
 #source all files
-source_config "nvim.fish"
+source_config -t all
 
 function fish_greeting
   #echo -e "

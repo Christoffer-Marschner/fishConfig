@@ -1,9 +1,8 @@
 
-echo source
-
-#source all .fish in conf.d
-abbr --add so 'source $HOME/.config/fish/conf.d/*.fish'
-
+#source all .fish in config
+abbr --add sol 'source_config -t list'
 #sourcing all files at once
-abbr --add soa 'source $HOME/.config/fish/**/*.fish'
+abbr --add so 'source_config -t all'
+
+status_echo -t ok 'source loaded'
 

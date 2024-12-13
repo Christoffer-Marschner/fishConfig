@@ -1,7 +1,7 @@
 
 #if nvim not installed throw message
 if not type -q nvim
-  echo -e '\033[31m! nvim not executable !\033[39m'
+  status_echo -t error 'nvim not executable'
   set -f not_ready
 end
 
@@ -12,7 +12,7 @@ if set -q not_ready
 end
 
 #start nvims file explorer in current directory
-abbr --add n 'nvim .'
+abbr --add n 'nvim'
 
-echo "nvim loaded"
+status_echo -t ok 'nvim loaded'
 
