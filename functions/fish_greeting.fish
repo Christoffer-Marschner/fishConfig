@@ -1,9 +1,11 @@
 
-echo greet
+#source all files
+source_config "nvim.fish"
 
 function fish_greeting
-  echo -e '
-  \033[34mwelcome! <><
-  '
+  #echo -e "
+  #\e[34mwelcome! <><
+  #"
 end
+
 
